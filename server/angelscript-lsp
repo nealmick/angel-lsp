@@ -1,2 +1,4 @@
 #!/bin/bash
-node /Users/neal/dev/lucky/angel-lsp/server/angelscript-language-server.js "$@"
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+node "$SCRIPT_DIR/angelscript-language-server.js" "$@"
