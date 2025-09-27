@@ -1,2 +1,2 @@
 #!/bin/bash
-node /Users/neal/dev/lucky/angel-lsp/server/angelscript-language-server.js "$@"
+node "$(dirname "$0")/angelscript-language-server.js" "$@"

@@ -4,6 +4,18 @@
 ![Version (including pre-releases)](https://img.shields.io/visual-studio-marketplace/v/sashi0034.angel-lsp)
 ![Installs](https://img.shields.io/visual-studio-marketplace/i/sashi0034.angel-lsp)
 
+## Quick Setup for External Editors
+
+For users wanting to use this language server with other editors (like ned):
+
+1. **Prerequisites**: Install [Node.js](https://nodejs.org/) (includes npm)
+2. **Clone and build**: `git clone https://github.com/sashi0034/angel-lsp.git && cd angel-lsp && npm run bundle` (or run `build.bat` on Windows)
+3. **Use the server**: Point your editor to `server/angelscript-lsp.bat` (Windows) or `server/angelscript-lsp` (Unix)
+
+The batch file will automatically build the server if needed.
+
+---
+
 This is a Language Server for Visual Studio Code that offers features to make AngelScript development easier and faster.
 
 ![sample.png](https://raw.githubusercontent.com/sashi0034/angel-lsp/main/sample.png)
