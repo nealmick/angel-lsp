@@ -1,5 +1,5 @@
 import * as lsp from "vscode-languageserver/node";
-import * as assert from "node:assert";
+import assert from "node:assert";
 
 export function moveDiagnosticsByChanges(diagnosticList: lsp.Diagnostic[], changes: lsp.TextDocumentContentChangeEvent[]) {
     for (const change of changes) {
