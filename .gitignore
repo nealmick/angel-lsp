@@ -4,4 +4,3 @@ client/server
 .vscode-test
 tsconfig.tsbuildinfo
 server/angelscript-language-server.js
-server/angelscript-lsp

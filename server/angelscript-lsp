@@ -1,0 +1,2 @@
+#!/bin/bash
+node /Users/neal/dev/lucky/angel-lsp/server/angelscript-language-server.js "$@"
