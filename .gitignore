@@ -4,3 +4,8 @@ client/server
 .vscode-test
 tsconfig.tsbuildinfo
 server/angelscript-language-server.js
+
+# Standalone executables
+server/angelscript-lsp.exe
+server/dist/
+*.exe

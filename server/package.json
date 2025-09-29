@@ -16,12 +16,15 @@
 		"vscode-languageserver-textdocument": "^1.0.11"
 	},
 	"devDependencies": {
-		"typescript": "^5.0.0",
 		"@types/node": "^20.0.0",
-		"esbuild": "^0.25.0"
+		"@yao-pkg/pkg": "^6.7.0",
+		"esbuild": "^0.25.0",
+		"typescript": "^5.0.0"
 	},
 	"scripts": {
 		"test": "mocha",
-		"bundle": "npx tsc && npx esbuild src/server.ts --bundle --outfile=angelscript-language-server.js --minify --platform=node"
+		"bundle": "npx tsc && npx esbuild src/server.ts --bundle --outfile=angelscript-language-server.js --minify --platform=node",
+		"build-exe": "npm run bundle && npx pkg angelscript-language-server.js --targets node18-win-x64 --output angelscript-lsp.exe",
+		"build-exe-all": "npm run bundle && npx pkg angelscript-language-server.js --targets node18-win-x64,node18-linux-x64,node18-macos-x64 --out-path dist"
 	}
 }
